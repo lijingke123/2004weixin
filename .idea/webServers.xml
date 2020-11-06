@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="139dbed1-dd81-42c7-b129-8e111e5bf2fe" name="服务器" url="http://47.93.2.109">
-        <fileTransfer host="47.93.2.109" port="22" rootFolder="/data/wwwroot/default" accessType="SFTP" username="weixin">
+      <webServer id="139dbed1-dd81-42c7-b129-8e111e5bf2fe" name="服务器" url="http://www.cibie.xyz">
+        <fileTransfer host="www.cibie.xyz" port="22" rootFolder="/data/wwwroot/default" accessType="SFTP" password="dfe6dfc3df98df99df9adf9ddf92df99df9edf99df98df9f" username="root">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

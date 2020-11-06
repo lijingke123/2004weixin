@@ -14,7 +14,10 @@ class WxController extends Controller
             echo $res;
         }else{
             $res = $this->getAccesstoken();
-            dd($res);
+//            dd($res);
+            $xml = file_get_contents("php://input");
+            file_get_contents("data.txt",$xml);
+            
         }
 
     }
@@ -41,12 +44,18 @@ class WxController extends Controller
         if(!Redis::get($key)){
             $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx8b14088e2da627cf&secret=10a2cada2130e0ada2e6e476ad16d448";
             $token = file_get_contents($url);
-            dd($token);
-//            $token = json_decode($token,true);
+//            dd($token);
+            $token = json_decode($token,true);
 
-//            if(){
-//
-//            }
+            if(isset($token['access_token'])){
+                $token = $token['access_token'];
+                Redis::setex($key,3600,$token);
+                return "无缓存".$token;
+            }else{
+                return false;
+            }
+        }else{
+            return "有缓存".Redis::get($key);
         }
     }
 }

@@ -16,4 +16,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/index','WxController@index');
+Route::any('/index','WxController@index');

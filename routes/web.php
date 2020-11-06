@@ -16,4 +16,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/weixin','Wx\WxController@test');
+Route::get('/index','WxController@index');

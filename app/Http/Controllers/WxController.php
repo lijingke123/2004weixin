@@ -8,7 +8,7 @@ class WxController extends Controller
 {
     public function index(){
         $echostr = request()->get('echostr','');
-        if($this->$checkSignature() && !empty($echostr)){
+        if($this->checkSignature() && !empty($echostr)){
             echo $echostr;
         }
     }

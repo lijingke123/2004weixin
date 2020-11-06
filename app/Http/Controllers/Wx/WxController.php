@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Redis;
 
 class WxController extends Controller
 {
-    public function   test(){
+    public function   index(){
         $res = request()->get('echostr','');
         if($this->checkSignature() && !empty($res)){
             echo $res;

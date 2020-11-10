@@ -108,6 +108,13 @@ class WxController extends Controller
                         $result = $this->text($postArray, $content);
                         echo $result;die;
                         break;
+
+                    case '命令':
+                        $content = '你好， 天气， 图文';
+                        $result = $this->text($postArray, $content);
+                        echo $result;die;
+                        break;
+
                     case '天气':
                         $content = $this->getweather();
                         $result = $this->text($postArray, $content);
@@ -115,6 +122,7 @@ class WxController extends Controller
                         break;
                     case '图文':
                         $this->upload($postArray);
+
                 }
             }
         }

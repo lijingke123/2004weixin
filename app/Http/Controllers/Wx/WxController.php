@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Weixin;
+namespace App\Http\Controllers\Wx;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redis;
 
-class WeixinController extends Controller
+class WxController extends Controller
 {
     //
     public function index()
@@ -18,6 +18,7 @@ class WeixinController extends Controller
 //        }
         $this->sub();
     }
+
 
     private function checkSignature()
     {
@@ -43,6 +44,7 @@ class WeixinController extends Controller
             return false;
         }
     }
+
 
     public function token()
     {
@@ -74,6 +76,7 @@ class WeixinController extends Controller
         echo "access_token:" . $token;
     }
 
+
     public function sub()
     {
         $postStr = file_get_contents("php://input");
@@ -102,7 +105,8 @@ class WeixinController extends Controller
         }
     }
 
-    //关注回复xml
+
+//关注回复xml
     public function text($postArray, $content)
     {
         $temple = '<xml>
@@ -115,7 +119,8 @@ class WeixinController extends Controller
         echo $temple;
     }
 
-    //天气预报
+
+//天气预报
     public function getweather()
     {
         $url = 'http://api.k780.com:88/?app=weather.future&weaid=heze&&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json';

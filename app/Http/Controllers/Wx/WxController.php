@@ -98,18 +98,20 @@ class WxController extends Controller
                 if ($postArray->Event == "subscribe") {
                     $content = "你好，欢迎关注";
                     $result = $this->text($postArray, $content);
-                    echo $result;
+                    echo $result;die;
                 }
             } elseif ($postArray->MsgType == "text") {
                 $msg = $postArray->Content;
                 switch ($msg) {
                     case '你好':
                         $content = '嗨喽';
-                        $this->text($postArray, $content);
+                        $result = $this->text($postArray, $content);
+                        echo $result;die;
                         break;
                     case '天气':
                         $content = $this->getweather();
-                        $this->text($postArray, $content);
+                        $result = $this->text($postArray, $content);
+                        echo $result;die;
                         break;
                     case '图文':
                         $this->upload($postArray);

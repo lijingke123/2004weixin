@@ -98,7 +98,7 @@ class WxController extends Controller
                 if ($postArray->Event == "subscribe") {
                     $content = "你好，欢迎关注";
                     $result = $this->text($postArray, $content);
-                    return $result;
+                    echo $result;
                 }
             } elseif ($postArray->MsgType == "text") {
                 $msg = $postArray->Content;

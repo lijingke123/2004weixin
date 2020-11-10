@@ -55,8 +55,8 @@ class WeixinController extends Controller
         } else {
             echo "无缓存";
             '</br>';
-            $APPID = "wxe27618d9affb1e96";
-            $APPSECRET = "a7165e1b4ba6df23047952e5591d1560";
+            $APPID = "wx8b14088e2da627cf";
+            $APPSECRET = "10a2cada2130e0ada2e6e476ad16d448";
             $url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid={$APPID}&secret={$APPSECRET}";
 //        echo $url;
             $response = file_get_contents($url);

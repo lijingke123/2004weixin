@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edf98c50-18bd-4ef4-a7c9-00b531760ed9" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
     </list>
     <ignored path="wx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,14 +37,14 @@
       <file leaf-file-name="WxController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2905028">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.5519553">
+              <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
               <folding>
                 <element signature="e#47#83#0#PHP" expanded="true" />
-                <marker date="1604974403095" expanded="true" signature="3049:3380" placeholder="..." />
-                <marker date="1604974403095" expanded="true" signature="4430:5281" placeholder="..." />
-                <marker date="1604974403095" expanded="true" signature="4840:5250" placeholder="..." />
-                <marker date="1604974403095" expanded="true" signature="4875:5212" placeholder="..." />
+                <marker date="1604975549395" expanded="true" signature="3049:3380" placeholder="..." />
+                <marker date="1604975549395" expanded="true" signature="4430:5281" placeholder="..." />
+                <marker date="1604975549395" expanded="true" signature="4840:5250" placeholder="..." />
+                <marker date="1604975549395" expanded="true" signature="4875:5212" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -57,8 +53,8 @@
       <file leaf-file-name="web.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.3714285">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state vertical-scroll-proportion="-11.885715">
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="50" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
               </folding>
@@ -74,8 +70,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" />
       </list>
     </option>
   </component>
@@ -280,7 +277,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5672098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -336,10 +333,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#47#83#0#PHP" expanded="true" />
-            <marker date="1604974403095" expanded="true" signature="3049:3380" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4430:5281" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4840:5250" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4875:5212" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="3049:3380" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4430:5281" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4840:5250" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4875:5212" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -368,10 +365,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#47#83#0#PHP" expanded="true" />
-            <marker date="1604974403095" expanded="true" signature="3049:3380" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4430:5281" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4840:5250" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4875:5212" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="3049:3380" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4430:5281" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4840:5250" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4875:5212" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -400,10 +397,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#47#83#0#PHP" expanded="true" />
-            <marker date="1604974403095" expanded="true" signature="3049:3380" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4430:5281" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4840:5250" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4875:5212" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="3049:3380" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4430:5281" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4840:5250" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4875:5212" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -425,14 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -443,24 +432,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.3714285">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state vertical-scroll-proportion="-11.885715">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="50" />
           <folding>
             <element signature="e#7#389#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2905028">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.5519553">
+          <caret line="58" column="60" selection-start-line="58" selection-start-column="60" selection-end-line="58" selection-end-column="60" />
           <folding>
             <element signature="e#47#83#0#PHP" expanded="true" />
-            <marker date="1604974403095" expanded="true" signature="3049:3380" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4430:5281" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4840:5250" placeholder="..." />
-            <marker date="1604974403095" expanded="true" signature="4875:5212" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="3049:3380" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4430:5281" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4840:5250" placeholder="..." />
+            <marker date="1604975549395" expanded="true" signature="4875:5212" placeholder="..." />
           </folding>
         </state>
       </provider>

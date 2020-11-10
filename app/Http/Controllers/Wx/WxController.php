@@ -204,4 +204,31 @@ class WxController extends Controller
             return false;
         }
     }
+
+    public function json()
+    {
+
+
+        $arr = [
+            "name"  => "zhangsan",
+            "age"   => 20,
+            'email' => "zhangshan@qq.com",
+            "name_cn"  => "张三"
+        ];
+
+        echo '<pre>';print_r($arr);echo '</pre>';
+
+        echo '<hr>';
+        $json = json_encode($arr,JSON_UNESCAPED_UNICODE);
+        echo $json;
+        echo '<hr>';
+        //json 转 对象
+        $obj = json_decode($json);
+        echo '<pre>';print_r($obj);echo '</pre>';
+        echo '<hr>';
+
+
+        $arr = json_decode($json,true);
+        echo '<pre>';print_r($arr);echo '</pre>';
+    }
 }

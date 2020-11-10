@@ -17,3 +17,13 @@ Route::get('/', function () {
 Route::any('/index','Wx\WxController@index');
 Route::any('/token','Wx\WxController@token');
 Route::any('','Wx\WxController@wx');
+
+
+
+//TEST  路由分组
+Route::prefix('/test')->group(function (){
+    Route::get('/json',"Wx\WxController@json");
+    Route::get('/guzz1',"WxController@guzzle1");
+    Route::get('/guzz2',"WxController@guzzle2");
+    Route::get('/guzz3',"WxController@guzzle3");
+});

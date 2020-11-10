@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    //PHPinfo();
     return view('welcome');
 });
-
-Route::any('/index','WxController@index');
+Route::any('/index','Weixin\WeixinController@index');
+Route::any('/token','Weixin\WeixinController@token');
+Route::any('','Weixin\WeixinController@wx');

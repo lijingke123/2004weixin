@@ -161,6 +161,32 @@ class WxController extends Controller
                             </item>
                           </Articles>
                         </xml>';
-        echo $uploads;
+                     echo $uploads;
+    }
+
+    public function wx(){
+        $signature = $_GET["signature"];
+        $timestamp = $_GET["timestamp"];
+        $nonce = $_GET["nonce"];
+
+        $token = "index";
+        $tmpArr = array($token, $timestamp, $nonce);
+        sort($tmpArr, SORT_STRING);
+        $tmpStr = implode( $tmpArr );
+        $tmpStr = sha1( $tmpStr );
+
+        if( $tmpStr == $signature ){
+            //接收数据
+            $xml_str = file_get_contents("php://input");
+            //记录日记
+            file_put_contents('wx_event',$xml_str);
+            //把xml转换为PHP的对象或者数组
+            echo "";
+            die;
+//                return true;
+        }else{
+//            echo '';
+            return false;
+        }
     }
 }

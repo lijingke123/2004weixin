@@ -79,28 +79,41 @@ class WxController extends Controller
 
     public function sub()
     {
-        $postStr = file_get_contents("php://input");
-        Log::info("====" . $postStr);
-        $postArray = simplexml_load_string($postStr);
-        Log::info('=================================' . $postArray);
-        if ($postArray->MsgType == "event") {
-            if ($postArray->Event == "subscribe") {
-                $content = "你好，欢迎关注";
-                $this->text($postArray, $content);
-            }
-        } elseif ($postArray->MsgType == "text") {
-            $msg = $postArray->Content;
-            switch ($msg) {
-                case '你好':
-                    $content = '嗨喽';
-                    $this->text($postArray, $content);
-                    break;
-                case '天气':
-                    $content = $this->getweather();
-                    $this->text($postArray, $content);
-                    break;
-                case '图文':
-                    $this->upload($postArray);
+        $signature = $_GET["signature"];
+        $timestamp = $_GET["timestamp"];
+        $nonce = $_GET["nonce"];
+
+        $token = "index";
+        $tmpArr = array($token, $timestamp, $nonce);
+        sort($tmpArr, SORT_STRING);
+        $tmpStr = implode($tmpArr);
+        $tmpStr = sha1($tmpStr);
+
+        if ($tmpStr == $signature) {
+            $postStr = file_get_contents("php://input");
+            Log::info("====" . $postStr);
+            $postArray = simplexml_load_string($postStr);
+            Log::info('=================================' . $postArray);
+            if ($postArray->MsgType == "event") {
+                if ($postArray->Event == "subscribe") {
+                    $content = "你好，欢迎关注";
+                    $result = $this->text($postArray, $content);
+                    return $result;
+                }
+            } elseif ($postArray->MsgType == "text") {
+                $msg = $postArray->Content;
+                switch ($msg) {
+                    case '你好':
+                        $content = '嗨喽';
+                        $this->text($postArray, $content);
+                        break;
+                    case '天气':
+                        $content = $this->getweather();
+                        $this->text($postArray, $content);
+                        break;
+                    case '图文':
+                        $this->upload($postArray);
+                }
             }
         }
     }
@@ -116,7 +129,7 @@ class WxController extends Controller
           <MsgType><![CDATA[text]]></MsgType>
           <Content><![CDATA[' . $content . ']]></Content>
         </xml>';
-        echo $temple;
+        return $temple;
     }
 
 

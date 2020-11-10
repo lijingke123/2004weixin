@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edf98c50-18bd-4ef4-a7c9-00b531760ed9" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" />
     </list>
     <ignored path="wx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,14 +44,14 @@
       <file leaf-file-name="WxController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09944134">
-              <caret line="166" column="22" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.5072626">
+              <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
               <folding>
                 <element signature="e#43#79#0#PHP" expanded="true" />
-                <marker date="1604977418409" expanded="true" signature="3041:3372" placeholder="..." />
-                <marker date="1604977418409" expanded="true" signature="4419:5270" placeholder="..." />
-                <marker date="1604977418409" expanded="true" signature="4829:5239" placeholder="..." />
-                <marker date="1604977418409" expanded="true" signature="4864:5201" placeholder="..." />
+                <marker date="1604980252264" expanded="true" signature="3531:3862" placeholder="..." />
+                <marker date="1604980252264" expanded="true" signature="4911:5762" placeholder="..." />
+                <marker date="1604980252264" expanded="true" signature="5321:5731" placeholder="..." />
+                <marker date="1604980252264" expanded="true" signature="5356:5693" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -79,8 +78,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" />
       </list>
     </option>
   </component>
@@ -142,6 +141,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="wx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,10 +377,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#43#79#0#PHP" expanded="true" />
-            <marker date="1604977418409" expanded="true" signature="3041:3372" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4419:5270" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4829:5239" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4864:5201" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="3531:3862" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="4911:5762" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="5321:5731" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="5356:5693" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -396,10 +409,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#43#79#0#PHP" expanded="true" />
-            <marker date="1604977418409" expanded="true" signature="3041:3372" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4419:5270" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4829:5239" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4864:5201" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="3531:3862" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="4911:5762" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="5321:5731" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="5356:5693" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -428,10 +441,10 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#43#79#0#PHP" expanded="true" />
-            <marker date="1604977418409" expanded="true" signature="3041:3372" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4419:5270" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4829:5239" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4864:5201" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="3531:3862" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="4911:5762" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="5321:5731" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="5356:5693" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -481,14 +494,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09944134">
-          <caret line="166" column="22" selection-start-line="166" selection-start-column="20" selection-end-line="166" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.5072626">
+          <caret line="100" column="35" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
           <folding>
             <element signature="e#43#79#0#PHP" expanded="true" />
-            <marker date="1604977418409" expanded="true" signature="3041:3372" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4419:5270" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4829:5239" placeholder="..." />
-            <marker date="1604977418409" expanded="true" signature="4864:5201" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="3531:3862" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="4911:5762" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="5321:5731" placeholder="..." />
+            <marker date="1604980252264" expanded="true" signature="5356:5693" placeholder="..." />
           </folding>
         </state>
       </provider>

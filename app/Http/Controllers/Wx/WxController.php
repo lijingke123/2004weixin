@@ -179,6 +179,43 @@ class WxController extends Controller
                      echo $uploads;
     }
 
+
+    public function custom(){
+        $access_token = $this->token();
+        $url = 'http://api.weixin.qq.com/cgi-bin/menu/create?access_token='.$access_token;
+    //    echo $url;
+        $array = [
+            'button'=>[
+            [
+                'type'=>'click',
+                'name'=>"天气",
+                'key'=>'WEATHER'
+            ],
+            [
+                'name'=>'菜单',
+                "sub_button"=>[
+                    [
+                        'type'=>'view',
+                        'name'=>'百度',
+                        'url'=>'http://www.baidu.com'
+                    ],
+                ]
+            ]
+          ]
+        ];
+
+
+//        $array->toArray();
+//        print_r($array);exit;
+        $client = new Client();
+        $response = $client->request('POST',$url,[
+            'verify'=>false,
+            'body'=>json_encode($array,JSON_UNESCAPED_UNICODE)
+        ]);
+        $data = $response->getBody();
+        echo $data;
+    }
+
     public function wx(){
         $signature = $_GET["signature"];
         $timestamp = $_GET["timestamp"];

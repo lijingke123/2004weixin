@@ -185,13 +185,8 @@ class WxController extends Controller
         $url = 'http://api.weixin.qq.com/cgi-bin/menu/create?access_token='.$access_token;
     //    echo $url;
         $array = [
-            'button'=>[
-            [
-                'type'=>'click',
-                'name'=>"天气",
-                'key'=>'WEATHER'
-            ],
-            [
+            'button'=> [
+        [
                 'name'=>'菜单',
                 "sub_button"=>[
                     [
@@ -199,9 +194,14 @@ class WxController extends Controller
                         'name'=>'百度',
                         'url'=>'http://www.baidu.com'
                     ],
+                    [
+                        'type'=>'click',
+                        'name'=>"天气",
+                        'key'=>'WEATHER'
+                    ],
                 ]
             ]
-          ]
+        ]
         ];
 
 

@@ -38,8 +38,10 @@ class WxController extends Controller
             //记录日记
             file_put_contents('we_event', $xml_str);
             //把xml转换为PHP的对象或者数组
+            echo  $this->custom();
+
             echo "";
-//            die;
+//
         } else {
 //            echo '';
             return false;
@@ -126,9 +128,9 @@ class WxController extends Controller
                     ];
                     $weachInfo = WeachModel::insert($data);
                 }
+//                    echo  $this->custom();
                     $this->text($postArray, $content);
 //                    echo $result;die;
-                   echo  $this->custom();
                 }
             } elseif ($postArray->MsgType == "text") {
                 $msg = $postArray->Content;

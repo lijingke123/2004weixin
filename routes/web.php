@@ -12,12 +12,12 @@
 */
 
 Route::get('/', function () {
-    echo phpinfo();
+    echo phpinfo();die;
     return view('welcome');
 });
 Route::any('/index','Wx\WxController@index');
 Route::any('/token','Wx\WxController@token');
-Route::any('','Wx\WxController@wx');
+Route::any('/wx','Wx\WxController@wx');
 Route::any('/custom','Wx\WxController@custom');
 
 

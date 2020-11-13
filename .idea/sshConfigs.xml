@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="47.93.2.109" id="66adfeeb-0c28-4731-9d92-f23ec1873844" port="22" customName="服务器" nameFormat="CUSTOM" />
+      <sshConfig authType="PASSWORD" host="www.cibie.xyz" id="62644be6-7fe5-4513-9819-93e9163d9dd4" port="22" customName="李静科" nameFormat="CUSTOM" />
+      <sshConfig authType="PASSWORD" host="47.93.2.109" id="c4505007-e389-4637-b6b7-68dfde1f6a5a" port="22" customName="服务器" nameFormat="CUSTOM" username="root" />
+      <sshConfig authType="PASSWORD" host="www.cibie.xyz" id="5de6774a-6923-4e0f-96d9-0a99f1371a29" port="22" customName="李静科" nameFormat="CUSTOM" username="root" />
+      <sshConfig authType="PASSWORD" host="www.cibie.xyz" id="c400340e-f8f2-414e-9392-2f02c27de94f" port="22" customName="李静科" nameFormat="CUSTOM" username="root" />
+    </configs>
+  </component>
+</project>

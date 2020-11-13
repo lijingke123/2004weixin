@@ -134,13 +134,13 @@ class WxController extends Controller
                 switch ($msg) {
                     case '你好':
                         $content = '嗨喽';
-                        $result = $this->text($postArray, $content);
-                        echo $result;die;
+                        $this->text($postArray, $content);
+//                        echo $result;die;
                         break;
                     case '天气':
                         $content = $this->getweather();
-                        $result = $this->text($postArray, $content);
-                        echo $result;die;
+                        $this->text($postArray, $content);
+//                        echo $result;die;
                         break;
                     case '图文':
                         $this->upload($postArray);
@@ -263,7 +263,7 @@ class WxController extends Controller
             file_put_contents('wx_event',$xml_str);
             //把xml转换为PHP的对象或者数组
             echo "";
-            die;
+//            die;
 //                return true;
         }else{
 //            echo '';

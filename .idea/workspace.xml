@@ -20,9 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edf98c50-18bd-4ef4-a7c9-00b531760ed9" name="默认的" comment="默认的">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/wx.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/wx.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Wx/WxController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +222,7 @@
       <workItem from="1605176043221" duration="196000" />
       <workItem from="1605176359884" duration="143000" />
       <workItem from="1605176518403" duration="6328000" />
-      <workItem from="1605228543992" duration="781000" />
+      <workItem from="1605228543992" duration="1147000" />
     </task>
     <servers />
   </component>

@@ -126,8 +126,8 @@ class WxController extends Controller
                     ];
                     $weachInfo = WeachModel::insert($data);
                 }
-                    $result = $this->text($postArray, $content);
-                    echo $result;die;
+                    $this->text($postArray, $content);
+//                    echo $result;die;
                 }
             } elseif ($postArray->MsgType == "text") {
                 $msg = $postArray->Content;

@@ -128,6 +128,7 @@ class WxController extends Controller
                 }
                     $this->text($postArray, $content);
 //                    echo $result;die;
+                   echo  $this->custom();
                 }
             } elseif ($postArray->MsgType == "text") {
                 $msg = $postArray->Content;

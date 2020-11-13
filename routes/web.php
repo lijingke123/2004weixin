@@ -12,12 +12,13 @@
 */
 
 Route::get('/', function () {
+    echo phpinfo();
     return view('welcome');
 });
 Route::any('/index','Wx\WxController@index');
 Route::any('/token','Wx\WxController@token');
 Route::any('','Wx\WxController@wx');
-
+Route::any('/custom','Wx\WxController@custom');
 
 
 //TEST  路由分组
